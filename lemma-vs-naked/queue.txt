@@ -1,0 +1,7 @@
+# lemma arm queue: <problem-id> <ws-port> <burst-budget>
+# budget 350 bursts ≈ the naked arm's ~150k generation tokens (400 tok/burst).
+# ports 7640+ avoid the live lemma-lab (7630) and seedling tuning (7628) ports.
+non-palindromic-balanced 7640 350
+collatz-records          7641 350
+keith-numbers            7642 350
+reverse-multiple         7643 350

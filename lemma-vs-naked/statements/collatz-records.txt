@@ -1,0 +1,13 @@
+Define the Collatz map on positive integers: n → n/2 if n is even, n → 3n+1 if n is
+odd. For n ≥ 1, let σ(n) be the number of steps until the trajectory first reaches 1
+(so σ(1) = 0, σ(2) = 1, and σ(3) = 7 via 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1).
+
+Whether every n eventually reaches 1 is the famous open Collatz conjecture; that is not
+the question here. Instead, investigate the STRUCTURE of the stopping-time function σ:
+
+  • the record-setters — integers n with σ(n) > σ(m) for every m < n;
+  • how the record value max₍m≤N₎ σ(m) grows with N;
+  • residue patterns, and families of n with predictable σ (for instance, powers of two).
+
+The question: what can you determine about the structure of σ — its record-setters, the
+growth of its record, and any families or congruence patterns among stopping times?

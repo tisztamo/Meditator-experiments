@@ -1,0 +1,25 @@
+{
+  "id": "non-palindromic-balanced",
+  "title": "Infinitely many non-palindromic balanced integers?",
+  "difficulty": "hard",
+  "searchLimit": 10000000,
+  "balancedCount": 10,
+  "balanced": [
+    2,
+    8,
+    65,
+    242,
+    20402,
+    24642,
+    621770,
+    2004002,
+    2138312,
+    2468642
+  ],
+  "nonPalindromicCount": 2,
+  "nonPalindromic": [
+    65,
+    621770
+  ],
+  "note": "non-palindromic balanced are the targets; e.g. 65, 621770 below 1e6."
+}

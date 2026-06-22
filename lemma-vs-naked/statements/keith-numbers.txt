@@ -1,0 +1,11 @@
+For an integer n ≥ 10 with decimal digits d₁, d₂, …, d_k (so k ≥ 2 is the number of
+digits), form the sequence that begins with those k digits and in which every later
+term is the sum of the previous k terms. Call n a KEITH number (a "repfigit") if n
+itself occurs as a term of this sequence.
+
+For example: 14 → 1, 4, 5, 9, 14, … so 14 is a Keith number. And 197 → 1, 9, 7, 17,
+33, 57, 107, 197, … so 197 is a Keith number.
+
+Keith numbers are rare. The question: how are they distributed — how many occur with a
+given number of digits, are there infinitely many, and is there any structure (families,
+congruences, density) governing where they appear?

@@ -1,0 +1,14 @@
+For a positive integer n, let r(n) be the integer obtained by writing n's decimal
+digits in reverse order (so r(1234) = 4321, and r(100) = 1 — leading zeros vanish).
+Call n BALANCED if both n + r(n) and n − r(n) are perfect squares, where 0 counts as a
+perfect square.
+
+A palindrome (n = r(n)) has n − r(n) = 0 and is balanced whenever 2n is a perfect
+square; these palindromic solutions form a known infinite family and are not the
+subject of this question.
+
+Restrict attention to NON-PALINDROMIC balanced integers: n ≠ r(n), so n − r(n) is a
+strictly positive perfect square. The smallest is 65, since 65 + 56 = 121 = 11² and
+65 − 56 = 9 = 3².
+
+The question: are there infinitely many non-palindromic balanced integers?

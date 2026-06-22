@@ -1,0 +1,11 @@
+For a positive integer n, let r(n) be n with its decimal digits reversed (r(1234) =
+4321; leading zeros vanish, e.g. r(120) = 21). Call n a REVERSE MULTIPLE if n is an
+exact integer multiple of r(n) by a factor of at least 2 — that is, n = k·r(n) for some
+integer k ≥ 2 — where n is not a palindrome and not a multiple of 10 (these exclusions
+remove the trivial k = 1 case and trailing-zero degeneracies).
+
+For example, 8712 = 4 × 2178 and 9801 = 9 × 1089.
+
+The question: which integers are reverse multiples — what values of k occur, what do the
+solutions look like grouped by number of digits, and is there a family or parametrization
+that produces infinitely many of them?
