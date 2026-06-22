@@ -1,0 +1,36 @@
+# Overnight run queue. Columns (whitespace-separated):
+#   name  tail  recent  story  budget  port  originfile(- = archml default)
+# Lines starting with # or blank are ignored. The supervisor launches each as a slot frees,
+# stops it at its budget (graceful), logs to completed.log, and stamps runs/<name>/done.
+# A run is "already started" iff runs/<name>/meta.env exists, so editing/appending is safe.
+#
+# --- Phase 2: memory-length GRADIENT (map the Goldilocks curve edges), budget 250 ---
+ml-e1 2700 1950 3600 250 7710 -
+ml-h1 16200 11700 21600 250 7711 -
+ml-g1 8100 5850 10800 250 7712 -
+ml-e2 2700 1950 3600 250 7713 -
+ml-h2 16200 11700 21600 250 7714 -
+# --- Phase 3: HARDER problem (non-palindromic infinitude) — does a closure-resistant
+#     question sustain work longer? budget 500 ---
+ml-hard-b1 5400 3900 7200 500 7715 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt
+ml-hard-g1 8100 5850 10800 500 7716 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt
+ml-hard-c1 10800 7800 14400 500 7717 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt
+ml-hard-b2 5400 3900 7200 500 7718 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt
+# --- Long-sustain on the ORIGINAL problem: how far does baseline go before it ever derails? ---
+ml-long-b1 5400 3900 7200 700 7719 -
+# --- appended at first check-in (22:23 UTC): complete gradient n=2 + harder-problem memory sweep ---
+ml-g2 8100 5850 10800 250 7720 -
+ml-hard-a1 1350 975 1800 400 7721 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt
+ml-hard-d1 9300 3600 3600 600 7722 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt
+ml-hard-h1 16200 11700 21600 600 7723 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt
+# --- appended at check-in 3 (01:42 UTC): harder-problem replicates (firm up recovery/sustain n=2) + one DIFFERENT-domain open problem (Collatz stopping-time structure) for generality ---
+ml-hard-c2 10800 7800 14400 500 7724 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt
+ml-hard-g2 8100 5850 10800 500 7725 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt
+ml-hard-d2 9300 3600 3600 500 7726 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt
+ml-diff-b1 5400 3900 7200 500 7727 /home/sovereign/Meditator/experiments/memory-attractor/origins/different-collatz.txt
+# --- check-in 4 (03:15 UTC): GENERALITY test — key configs on the DIFFERENT-domain Collatz problem ---
+ml-diff-d1 9300 3600 3600 600 7728 /home/sovereign/Meditator/experiments/memory-attractor/origins/different-collatz.txt
+ml-diff-h1 16200 11700 21600 600 7729 /home/sovereign/Meditator/experiments/memory-attractor/origins/different-collatz.txt
+ml-diff-b2 5400 3900 7200 500 7730 /home/sovereign/Meditator/experiments/memory-attractor/origins/different-collatz.txt
+ml-diff-a1 1350 975 1800 400 7731 /home/sovereign/Meditator/experiments/memory-attractor/origins/different-collatz.txt
+ml-hard-g3 8100 5850 10800 350 7732 /home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt

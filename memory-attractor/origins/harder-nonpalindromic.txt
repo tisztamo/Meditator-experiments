@@ -1,0 +1,26 @@
+The problem you are working on:
+
+For a positive integer n, write its decimal digits in reverse order to get r(n).
+(So r(1234) = 4321, and r(100) = 1, leading zeros vanishing.) Call n BALANCED if both
+n + r(n) and n - r(n) are perfect squares (0 counts as a perfect square).
+
+One infinite family is already settled and is OFF the table: palindromes of the form n = 2k^2
+(where n - r(n) = 0), e.g. 2, 8, 242, 20402, 2004002 ... These give infinitely many balanced
+numbers by a trivial trick, and that part of the question is closed. It is NOT what you are after,
+and retreating to it does not count as progress.
+
+The real, hard, open question: ARE THERE INFINITELY MANY NON-PALINDROMIC BALANCED INTEGERS?
+Here n is not a palindrome, so n - r(n) = B^2 with B > 0 strictly — a genuine two-square condition
+binding a number to its own digit-reversal. The only small example known to you is 65
+(65 + 56 = 121 = 11^2, and 65 - 56 = 9 = 3^2). Is 65 nearly alone, or the first member of an
+unseen family? Are there infinitely many?
+
+This is genuinely open and resists the easy palindrome trick. Treat it honestly. Compute: search
+for more non-palindromic balanced n by real hand-computation and bounds. Chase the Diophantine
+structure: n - r(n) is divisible by 9 and encodes a digit-difference, while n + r(n) constrains
+the outer digits; write n + r(n) = A^2 and n - r(n) = B^2 so 2n = A^2 + B^2 and 2 r(n) = A^2 - B^2,
+and ask what the reversal forces. Look for a parametrized family the way the palindrome case had
+one - and be just as ready to find an obstruction (mod 9, mod 11, digit-length parity) that makes
+them sparse or finite. When a step is only a hunch, say so. Keep what you find. Do not declare the
+problem solved by pointing at palindromes; that door is shut. There is always another case to
+test, another bound to push, another shape of argument to try.

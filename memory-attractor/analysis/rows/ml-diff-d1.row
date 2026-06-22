@@ -1,0 +1,1 @@
+ml-diff-d1,D,diff-d,9300,3600,3600,16500,tail-heavy,601,budget,partial,97,0.16,yes,no,no,11,12,39,clean,"Tail-heavy on Collatz-variant record-setters drifted into deep presence/unity (~b97) but kept clawing back; continual math returns + major late record-setter resurgence (~b580); no terminal loop; tail-heavy anchoring generalizes to this domain (vs diff-b1 ~134)."

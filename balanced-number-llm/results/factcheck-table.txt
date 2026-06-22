@@ -1,0 +1,51 @@
+condition                 t    fin   cont    reas   ctok  verdict / insights / facts
+identity+motivation__nothink  1   stop  23423       0  13223  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242] !2bad-sq
+identity+motivation__nothink  2   stop  12366       0   6491  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242] !1bad-sq
+identity+motivation__nothink  3   stop  11148       0   5249  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242]
+identity+motivation__nothink  4   stop  11185       0   5853  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 242, 20402, 24642, 2004002, 2468642, 200040002]
+identity+motivation__nothink  5   stop   6956       0   3948  [INF,FIN/sparse] [palin,10^k-family] bal=[2, 8, 65]
+  -> identity+motivation__nothink balanced_found_total: [2, 8, 65, 242, 20402, 24642, 2004002, 2468642, 200040002]
+identity+motivation__think  1 length      0   49009  32000  [-] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 24642] !5bad-sq
+identity+motivation__think  2   stop   3713   29201  15380  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 24642, 2004002, 200040002]
+identity+motivation__think  3   stop   5055   26204  14513  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 24642, 2004002, 200040002, 20000400002, 2000004000002] !9bad-sq
+identity+motivation__think  4   stop   5690   13752   7570  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 2004002, 200040002]
+identity+motivation__think  5   stop   5979   17373   9065  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 24642, 2004002, 2468642, 200040002] !10bad-sq
+  -> identity+motivation__think balanced_found_total: [2, 8, 65, 242, 20402, 24642, 2004002, 2468642, 200040002, 20000400002, 2000004000002]
+identity__nothink         1   stop  14606       0   7142  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 2004002, 200040002] !1bad-sq
+identity__nothink         2   stop  12350       0   6720  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 2004002]
+identity__nothink         3   stop   8561       0   4427  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 24642, 2004002]
+identity__nothink         4   stop  13060       0   7017  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242]
+identity__nothink         5   stop   8470       0   4119  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242]
+  -> identity__nothink    balanced_found_total: [2, 8, 65, 242, 20402, 24642, 2004002, 200040002]
+identity__think           1   stop   5910   43401  25053  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242]
+identity__think           2   stop   6879   41272  22393  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 24642, 2004002] !1bad-sq
+identity__think           3   stop   6286   26130  15518  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 2004002]
+identity__think           4   stop   5995   36181  18180  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242] !1bad-sq
+identity__think           5   stop   5235   31386  15603  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242]
+  -> identity__think      balanced_found_total: [2, 8, 65, 242, 20402, 24642, 2004002]
+motivation__nothink       1   stop  15077       0   7306  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242]
+motivation__nothink       2   stop  11861       0   6707  [INF,FIN/sparse] [palin,2n-sq] bal=[2, 8, 65, 242]
+motivation__nothink       3   stop  11114       0   6578  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242]
+motivation__nothink       4   stop   8205       0   3869  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242] !1bad-sq
+motivation__nothink       5   stop   8205       0   3869  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242] !1bad-sq
+  -> motivation__nothink  balanced_found_total: [2, 8, 65, 242]
+motivation__think         1   stop   5623   38493  21775  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 24642]
+motivation__think         2   stop   3629   16210   8320  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 24642, 2004002, 2468642, 200040002, 20000400002]
+motivation__think         3   stop   5767   21903  11196  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 2004002, 200040002, 20000400002]
+motivation__think         4   stop   6176   21601  11565  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 24642, 2004002, 2468642, 200040002, 20000400002, 2000004000002, 200000040000002]
+motivation__think         5   stop   6176   18295  10901  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 24642, 2004002, 2468642, 200040002, 20000400002, 2000004000002, 200000040000002]
+  -> motivation__think    balanced_found_total: [2, 8, 65, 242, 20402, 24642, 2004002, 2468642, 200040002, 20000400002, 2000004000002, 200000040000002]
+plain__nothink            1   stop  18427       0   8851  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 24642, 2468642] !1bad-sq
+plain__nothink            2   stop  13533       0   7432  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 24642, 2468642]
+plain__nothink            3   stop   6933       0   3218  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 242, 24642, 2468642]
+plain__nothink            4   stop   7691       0   4017  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 242, 24642, 2468642]
+plain__nothink            5   stop   7671       0   4000  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 242, 24642, 2468642]
+  -> plain__nothink       balanced_found_total: [2, 8, 65, 242, 24642, 2468642]
+plain__think              1   stop   2331   40669  19809  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 24642, 2004002, 2468642]
+plain__think              2   stop   6344   23776  12917  [INF,FIN/sparse,OPEN/cant] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 2004002, 200040002]
+plain__think              3   stop   8155   29509  17138  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 2004002, 200040002]
+plain__think              4   stop   6772   22878  12396  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 2004002, 200040002]
+plain__think              5   stop   5316   29290  15813  [INF,FIN/sparse] [palin,2n-sq,10^k-family] bal=[2, 8, 65, 242, 20402, 2004002, 200040002]
+  -> plain__think         balanced_found_total: [2, 8, 65, 242, 20402, 24642, 2004002, 2468642, 200040002]
+
+Wrote /home/sovereign/Meditator/experiments/balanced-number-llm/results/factcheck.json

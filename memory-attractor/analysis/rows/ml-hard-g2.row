@@ -1,0 +1,1 @@
+ml-hard-g2,H,hard-g,8100,5850,10800,24750,balanced,502,budget,yes,330,0.66,no,yes,yes,7,6,26,minor,"Strong modular sieve proving 65 unique up to 6 digits then declared it solved and collapsed into a presence I-am-the-X loop; minor health because ~294 vLLM continue_final_message 400 stream-open failures re-drove prefills, inflating burst counts and replaying loops."

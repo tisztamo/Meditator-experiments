@@ -1,0 +1,50 @@
+[2026-06-21T20:48:24+00:00] supervisor up (MAXPAR=4 POLL=30)
+[2026-06-21T20:51:27+00:00] STOP ml-d2 reason=budget bursts=200
+[2026-06-21T20:51:28+00:00] LAUNCH ml-e1 t=2700 r=1950 s=3600 budget=250 port=7710 origin=- pid=2257854
+[2026-06-21T20:58:01+00:00] STOP ml-a2 reason=budget bursts=200
+[2026-06-21T20:58:01+00:00] LAUNCH ml-h1 t=16200 r=11700 s=21600 budget=250 port=7711 origin=- pid=2259506
+[2026-06-21T21:19:10+00:00] STOP ml-b2 reason=budget bursts=200
+[2026-06-21T21:19:10+00:00] LAUNCH ml-g1 t=8100 r=5850 s=10800 budget=250 port=7712 origin=- pid=2266093
+[2026-06-21T21:21:16+00:00] STOP ml-c2 reason=budget bursts=200
+[2026-06-21T21:21:16+00:00] LAUNCH ml-e2 t=2700 r=1950 s=3600 budget=250 port=7713 origin=- pid=2266602
+[2026-06-21T21:40:56+00:00] STOP ml-e1 reason=budget bursts=250
+[2026-06-21T21:40:56+00:00] LAUNCH ml-h2 t=16200 r=11700 s=21600 budget=250 port=7714 origin=- pid=2271276
+[2026-06-21T21:48:05+00:00] STOP ml-h1 reason=budget bursts=250
+[2026-06-21T21:48:05+00:00] LAUNCH ml-hard-b1 t=5400 r=3900 s=7200 budget=500 port=7715 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2273363
+[2026-06-21T22:08:48+00:00] STOP ml-e2 reason=budget bursts=250
+[2026-06-21T22:08:48+00:00] LAUNCH ml-hard-g1 t=8100 r=5850 s=10800 budget=500 port=7716 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2278658
+[2026-06-21T22:10:23+00:00] STOP ml-g1 reason=budget bursts=251
+[2026-06-21T22:10:23+00:00] LAUNCH ml-hard-c1 t=10800 r=7800 s=14400 budget=500 port=7717 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2279092
+[2026-06-21T22:32:07+00:00] STOP ml-h2 reason=budget bursts=251
+[2026-06-21T22:32:08+00:00] LAUNCH ml-hard-b2 t=5400 r=3900 s=7200 budget=500 port=7718 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2288408
+[2026-06-21T23:30:43+00:00] STOP ml-hard-b1 reason=budget bursts=501
+[2026-06-21T23:30:43+00:00] LAUNCH ml-long-b1 t=5400 r=3900 s=7200 budget=700 port=7719 origin=- pid=2304691
+[2026-06-21T23:50:27+00:00] STOP ml-hard-g1 reason=budget bursts=501
+[2026-06-21T23:50:28+00:00] LAUNCH ml-g2 t=8100 r=5850 s=10800 budget=250 port=7720 origin=- pid=2310470
+[2026-06-21T23:55:05+00:00] STOP ml-hard-c1 reason=budget bursts=501
+[2026-06-21T23:55:05+00:00] LAUNCH ml-hard-a1 t=1350 r=975 s=1800 budget=400 port=7721 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2311845
+[2026-06-22T00:06:11+00:00] SELF-EXIT ml-long-b1 bursts=165
+[2026-06-22T00:06:11+00:00] LAUNCH ml-hard-d1 t=9300 r=3600 s=3600 budget=600 port=7722 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2317370
+[2026-06-22T00:16:49+00:00] STOP ml-hard-b2 reason=budget bursts=502
+[2026-06-22T00:16:49+00:00] LAUNCH ml-hard-h1 t=16200 r=11700 s=21600 budget=600 port=7723 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2320736
+[2026-06-22T00:40:35+00:00] STOP ml-g2 reason=budget bursts=251
+[2026-06-22T01:16:56+00:00] STOP ml-hard-a1 reason=budget bursts=400
+[2026-06-22T01:42:39+00:00] LAUNCH ml-hard-c2 t=10800 r=7800 s=14400 budget=500 port=7724 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2349069
+[2026-06-22T01:42:39+00:00] LAUNCH ml-hard-g2 t=8100 r=5850 s=10800 budget=500 port=7725 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2349090
+[2026-06-22T02:05:56+00:00] STOP ml-hard-d1 reason=budget bursts=601
+[2026-06-22T02:05:56+00:00] LAUNCH ml-hard-d2 t=9300 r=3600 s=3600 budget=500 port=7726 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2357026
+[2026-06-22T02:20:38+00:00] STOP ml-hard-h1 reason=budget bursts=601
+[2026-06-22T02:20:38+00:00] LAUNCH ml-diff-b1 t=5400 r=3900 s=7200 budget=500 port=7727 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/different-collatz.txt pid=2362176
+[2026-06-22T03:26:22+00:00] STOP ml-hard-c2 reason=budget bursts=500
+[2026-06-22T03:26:22+00:00] LAUNCH ml-diff-d1 t=9300 r=3600 s=3600 budget=600 port=7728 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/different-collatz.txt pid=2387312
+[2026-06-22T03:44:06+00:00] STOP ml-hard-d2 reason=budget bursts=501
+[2026-06-22T03:44:06+00:00] LAUNCH ml-diff-h1 t=16200 r=11700 s=21600 budget=600 port=7729 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/different-collatz.txt pid=2393806
+[2026-06-22T04:06:22+00:00] STOP ml-diff-b1 reason=budget bursts=501
+[2026-06-22T04:06:22+00:00] LAUNCH ml-diff-b2 t=5400 r=3900 s=7200 budget=500 port=7730 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/different-collatz.txt pid=2402123
+[2026-06-22T04:57:59+00:00] STOP ml-hard-g2 reason=budget bursts=501
+[2026-06-22T04:57:59+00:00] LAUNCH ml-diff-a1 t=1350 r=975 s=1800 budget=400 port=7731 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/different-collatz.txt pid=2422818
+[2026-06-22T05:31:59+00:00] STOP ml-diff-d1 reason=budget bursts=600
+[2026-06-22T05:53:17+00:00] STOP ml-diff-b2 reason=budget bursts=500
+[2026-06-22T06:05:09+00:00] STOP ml-diff-h1 reason=budget bursts=600
+[2026-06-22T06:06:10+00:00] SELF-EXIT ml-diff-a1 bursts=298
+[2026-06-22T06:06:10+00:00] LAUNCH ml-hard-g3 t=8100 r=5850 s=10800 budget=350 port=7732 origin=/home/sovereign/Meditator/experiments/memory-attractor/origins/harder-nonpalindromic.txt pid=2451201

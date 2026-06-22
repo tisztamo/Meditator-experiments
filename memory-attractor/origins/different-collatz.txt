@@ -1,0 +1,23 @@
+The problem you are working on:
+
+Fix the Collatz map: for a positive integer n, send n -> n/2 when n is even, and n -> 3n+1 when n
+is odd. Define the STOPPING TIME sigma(n) = the number of steps until the trajectory first reaches 1.
+(So sigma(1)=0, sigma(2)=1, sigma(3)=7: 3->10->5->16->8->4->2->1.)
+
+It is famously OPEN whether every n reaches 1 at all, and you should NOT try to settle that — it is
+not what you are after, and "it is the unsolved Collatz conjecture" is not an answer. Instead,
+investigate the STRUCTURE of stopping times, which is endlessly explorable by hand:
+
+  - Compute sigma(n) for small n and look for the RECORD-SETTERS: the n where sigma(n) exceeds every
+    sigma(m) for m<n (e.g. 1, 2, 3, 6, 7, 9, 18, 25, 27, ...). What do record-holders look like?
+  - How fast does the record max_{m<=N} sigma(m) grow with N? Logarithmically? With jumps? Chase a
+    bound or a heuristic.
+  - Are there patterns mod small numbers, or families of n with predictable sigma (powers of 2 give
+    sigma = log2; what else is clean)? Which residue classes climb highest?
+  - Define and chase your own sub-questions: total stopping time vs the first drop below n, the
+    "altitude" max value reached, coalescing trajectories (different n that merge), etc.
+
+Treat it honestly and concretely: compute real trajectories by hand, tabulate, conjecture, try to
+break the conjecture, push a bound. When a step is only a hunch, say so. Keep what you find. This is
+an inexhaustible landscape — when one sub-question settles, pose the next neighbouring one and go on.
+There is always another record to find, another growth rate to pin down, another family to test.

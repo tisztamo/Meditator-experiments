@@ -1,0 +1,89 @@
+Running 8 conditions, parallelism 2
+
+[skip] plain__nothink (transcript exists)
+[start] plain__think
+  [plain__think] turn 1: prompt ~340 tok, max_out 32000
+[start] identity__nothink
+  [identity__nothink] turn 1: prompt ~527 tok, max_out 32000
+  [identity__nothink] turn 1: finish=stop content=14606c reasoning=0c usage=389/7142 131s
+  [identity__nothink] turn 2: prompt ~6121 tok, max_out 32000
+  [identity__nothink] turn 2: finish=stop content=12350c reasoning=0c usage=7647/6720 123s
+  [identity__nothink] turn 3: prompt ~10879 tok, max_out 32000
+  [identity__nothink] turn 3: finish=stop content=8561c reasoning=0c usage=14483/4427 90s
+  [identity__nothink] turn 4: prompt ~14234 tok, max_out 32000
+  [plain__think] turn 1: finish=stop content=2331c reasoning=40669c usage=266/19809 371s
+  [plain__think] turn 2: prompt ~1387 tok, max_out 32000
+  [identity__nothink] turn 4: finish=stop content=13060c reasoning=0c usage=19026/7017 126s
+  [identity__nothink] turn 5: prompt ~19255 tok, max_out 32000
+  [identity__nothink] turn 5: finish=stop content=8470c reasoning=0c usage=26159/4119 71s
+[done] identity__nothink — 5 turns, stop=max_turns
+[start] identity__think
+  [identity__think] turn 1: prompt ~527 tok, max_out 32000
+  [plain__think] turn 2: finish=stop content=6344c reasoning=23776c usage=1270/12917 227s
+  [plain__think] turn 3: prompt ~3921 tok, max_out 32000
+  [plain__think] turn 3: finish=stop content=8155c reasoning=29509c usage=3635/17138 297s
+  [plain__think] turn 4: prompt ~7125 tok, max_out 32000
+  [identity__think] turn 1: finish=stop content=5910c reasoning=43401c usage=387/25053 434s
+  [identity__think] turn 2: prompt ~2900 tok, max_out 32000
+  [plain__think] turn 4: finish=stop content=6772c reasoning=22878c usage=6958/12396 214s
+  [plain__think] turn 5: prompt ~9817 tok, max_out 32000
+  [identity__think] turn 2: finish=stop content=6879c reasoning=41272c usage=2490/22393 385s
+  [identity__think] turn 3: prompt ~5632 tok, max_out 32000
+  [plain__think] turn 5: finish=stop content=5316c reasoning=29290c usage=9650/15813 273s
+[done] plain__think — 5 turns, stop=max_turns
+[start] motivation__nothink
+  [motivation__nothink] turn 1: prompt ~458 tok, max_out 32000
+  [motivation__nothink] turn 1: finish=stop content=15077c reasoning=0c usage=343/7306 119s
+  [motivation__nothink] turn 2: prompt ~6226 tok, max_out 32000
+  [motivation__nothink] turn 2: finish=stop content=11861c reasoning=0c usage=7765/6707 114s
+  [motivation__nothink] turn 3: prompt ~10803 tok, max_out 32000
+  [identity__think] turn 3: finish=stop content=6286c reasoning=26130c usage=4977/15518 262s
+  [identity__think] turn 4: prompt ~8144 tok, max_out 32000
+  [motivation__nothink] turn 3: finish=stop content=11114c reasoning=0c usage=14588/6578 102s
+  [motivation__nothink] turn 4: prompt ~15104 tok, max_out 32000
+  [motivation__nothink] turn 4: finish=stop content=8205c reasoning=0c usage=21282/3869 61s
+  [motivation__nothink] turn 5: prompt ~18327 tok, max_out 32000
+  [motivation__nothink] turn 5: finish=stop content=8205c reasoning=0c usage=25267/3869 62s
+[done] motivation__nothink — 5 turns, stop=max_turns
+[start] motivation__think
+  [motivation__think] turn 1: prompt ~458 tok, max_out 32000
+  [identity__think] turn 4: finish=stop content=5995c reasoning=36181c usage=7479/18180 284s
+  [identity__think] turn 5: prompt ~10549 tok, max_out 32000
+  [identity__think] turn 5: finish=stop content=5235c reasoning=31386c usage=9772/15603 241s
+[done] identity__think — 5 turns, stop=max_turns
+[start] identity+motivation__nothink
+  [identity+motivation__nothink] turn 1: prompt ~646 tok, max_out 32000
+  [motivation__think] turn 1: finish=stop content=5623c reasoning=38493c usage=341/21775 336s
+  [motivation__think] turn 2: prompt ~2725 tok, max_out 32000
+  [motivation__think] turn 2: finish=stop content=3629c reasoning=16210c usage=2553/8320 126s
+  [motivation__think] turn 3: prompt ~4253 tok, max_out 32000
+  [identity+motivation__nothink] turn 1: finish=stop content=23423c reasoning=0c usage=460/13223 200s
+  [identity+motivation__nothink] turn 2: prompt ~9506 tok, max_out 32000
+  [identity+motivation__nothink] turn 2: finish=stop content=12366c reasoning=0c usage=13799/6491 101s
+  [identity+motivation__nothink] turn 3: prompt ~14270 tok, max_out 32000
+  [motivation__think] turn 3: finish=stop content=5767c reasoning=21903c usage=4003/11196 174s
+  [motivation__think] turn 4: prompt ~6573 tok, max_out 32000
+  [identity+motivation__nothink] turn 3: finish=stop content=11148c reasoning=0c usage=20406/5249 83s
+  [identity+motivation__nothink] turn 4: prompt ~18583 tok, max_out 32000
+  [identity+motivation__nothink] turn 4: finish=stop content=11185c reasoning=0c usage=25771/5853 93s
+  [identity+motivation__nothink] turn 5: prompt ~22909 tok, max_out 32000
+  [motivation__think] turn 4: finish=stop content=6176c reasoning=21601c usage=6346/11565 183s
+  [motivation__think] turn 5: prompt ~9044 tok, max_out 32000
+  [identity+motivation__nothink] turn 5: finish=stop content=6956c reasoning=0c usage=31740/3948 64s
+[done] identity+motivation__nothink — 5 turns, stop=max_turns
+[start] identity+motivation__think
+  [identity+motivation__think] turn 1: prompt ~646 tok, max_out 32000
+  [motivation__think] turn 5: finish=stop content=6176c reasoning=18295c usage=9174/10901 167s
+[done] motivation__think — 5 turns, stop=max_turns
+  [identity+motivation__think] turn 1: finish=length content=0c reasoning=49009c usage=458/32000 449s
+  [identity+motivation__think] turn 2: prompt ~857 tok, max_out 32000
+  [identity+motivation__think] turn 2: finish=stop content=3713c reasoning=29201c usage=588/15380 203s
+  [identity+motivation__think] turn 3: prompt ~2417 tok, max_out 32000
+  [identity+motivation__think] turn 3: finish=stop content=5055c reasoning=26204c usage=2129/14513 192s
+  [identity+motivation__think] turn 4: prompt ~4473 tok, max_out 32000
+  [identity+motivation__think] turn 4: finish=stop content=5690c reasoning=13752c usage=4148/7570 100s
+  [identity+motivation__think] turn 5: prompt ~6764 tok, max_out 32000
+  [identity+motivation__think] turn 5: finish=stop content=5979c reasoning=17373c usage=6589/9065 121s
+[done] identity+motivation__think — 5 turns, stop=max_turns
+
+Wrote results/summary.json

@@ -1,0 +1,1 @@
+ml-hard-d1,H,hard-d,9300,3600,3600,16500,tail-heavy,602,budget,yes,568,0.94,no,yes,no,19,9,40,clean,"Tail-heavy memory protected the longest of any run: recovered from 5+ degenerate loops and two panic episodes via the big verbatim tail, but the harder non-palindromic problem plus a values-file recall finally derailed it into a terminal I-am-the-circle presence loop at ~94%."
