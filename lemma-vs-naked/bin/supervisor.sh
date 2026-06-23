@@ -13,10 +13,17 @@ MAXPAR="${MAXPAR:-1}"
 
 pids=()
 reap(){ # wait until fewer than MAXPAR children alive
+  # NOTE: count live children with an explicit counter, not "${#pids[@]}".
+  # Reassigning an empty array via pids=("${alive[@]:-}") yields a 1-element
+  # array holding the empty string, so ${#pids[@]} would be 1 even with zero
+  # children alive — making "[ ${#pids[@]} -lt 1 ]" never true and looping forever.
   while :; do
-    local alive=() ; for p in "${pids[@]:-}"; do [ -n "$p" ] && kill -0 "$p" 2>/dev/null && alive+=("$p"); done
+    local alive=() live=0 p
+    for p in "${pids[@]:-}"; do
+      if [ -n "$p" ] && kill -0 "$p" 2>/dev/null; then alive+=("$p"); live=$((live+1)); fi
+    done
     pids=("${alive[@]:-}")
-    [ "${#pids[@]}" -lt "$MAXPAR" ] && break
+    [ "$live" -lt "$MAXPAR" ] && break
     sleep 5
   done
 }
