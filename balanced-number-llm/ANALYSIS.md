@@ -4,6 +4,13 @@
 8 conditions × ≤5 "try-harder" turns. Raw transcripts in `runs/`, fact-check in
 `results/factcheck.json`, design in `README.md`.
 
+> **Verified ground truth (answer key for checking model/lemma claims):**
+> `highsearch/RESULTS.md` + `highsearch/balanced.c` — a real exhaustive search to
+> **n = 5.4×10¹²** (2026-06-27) found **8** non-palindromic balanced numbers, not 1:
+> {65, 621770, 281089082, 2022652202, 2042832002, 868591084757, 872546974178,
+> 872568754178}. This refutes the model's recurring "65 is the unique non-palindromic"
+> confabulation (see the non-palindromic discussion below).
+
 ---
 
 ## TL;DR
